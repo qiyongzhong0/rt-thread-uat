@@ -2,7 +2,7 @@
 
 ## 1.简介
 
-**uAT** 是一个微型的AT设备接口驱动，适用于半双工通信的轻量型AT设备驱动使用。
+**uAT** 是一个微型的AT设备驱动接口，适用于轻量型AT设备使用，如蓝牙、WIFI等。
 
 ### 1.1目录结构
 
@@ -103,14 +103,14 @@ uAT package 遵循 LGPLv2.1 许可，详见 `LICENSE` 文件。
 ### 2.3获取组件
 
 - **方式1：**
-通过 *Env配置工具* 或 *RT-Thread studio* 开启软件包，根据需要配置各项参数；配置路径为 *RT-Thread online packages -> miscellaneous packages -> quick pid* 
+通过 *Env配置工具* 或 *RT-Thread studio* 开启软件包，根据需要配置各项参数；配置路径为 *RT-Thread online packages -> peripherals packages -> uat* 
 
 
 ### 2.4配置参数说明
 
 | 参数宏 | 说明 |
 | ---- | ---- |
-| UAT_USING_TEST    | 使用测试功能
+| UAT_USING_PRT_RAW    | 使用原始数据打印功能
 
 ## 3. 联系方式
 
