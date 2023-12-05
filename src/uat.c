@@ -96,6 +96,12 @@ char *uat_get_buf(uat_inst_t *hinst)
     return(hinst->buf);
 }
 
+void uat_set_end_sign(uat_inst_t *hinst, const char *end_sign)
+{
+    RT_ASSERT(hinst != RT_NULL);
+    hinst->end_sign = end_sign;
+}
+
 int uat_data_recv(uat_inst_t *hinst, char *buf, int size, int tmo_ms)
 {
     RT_ASSERT(hinst != RT_NULL);

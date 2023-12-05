@@ -19,7 +19,7 @@ typedef struct uat_inst uat_inst_t;
 uat_inst_t * uat_inst_create(const char *serial, int baudrate, int byte_tmo_ms, int bufsize);
 void uat_inst_destory(uat_inst_t *hinst);
 char *uat_get_buf(uat_inst_t *hinst);
-void *uat_set_end_sign(uat_inst_t *hinst, const char *end_sign);
+void uat_set_end_sign(uat_inst_t *hinst, const char *end_sign);
 int uat_data_recv(uat_inst_t *hinst, char *buf, int size, int tmo_ms);
 int uat_data_send(uat_inst_t *hinst, const char *buf, int size);
 const char * uat_search_keyword(const char *buf, int size, const char *kw);
